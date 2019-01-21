@@ -44,10 +44,10 @@ CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
 unsigned int nStakeMinAge = 1 * 24 * nOneHour; // 1 days as zero time weight
 unsigned int nStakeMaxAge = 3 * 24 * nOneHour; // 3 days as full weight
-unsigned int nStakeTargetSpacing = 0.5 * 60; // 0.5-minute stakes spacing
+unsigned int nStakeTargetSpacing = 4 * 60; // 4-minute stakes spacing
 unsigned int nModifierInterval = 1 * nOneHour; // time to elapse before new modifier is computed
 
-int nCoinbaseMaturity = 60;
+int nCoinbaseMaturity = 50;
 
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
